@@ -36,3 +36,8 @@ def lyrics(request):
 
     # Handle case when no file is provided
     return Response({'error': 'No file provided.'}, status=400)
+
+
+@api_view(['GET'])
+def test(request):
+    return Response({'message': 'Success!'}, status=200)
