@@ -54,11 +54,13 @@ MIDDLEWARE = [
     "django.middleware.common.CommonMiddleware",
 ]
 
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:4200",
-    "https://karaoke-b21f4.web.app",
-    "http://karaoke-b21f4.web.app"
-]
+# CORS_ALLOWED_ORIGINS = [
+#     "http://localhost:4200",
+#     "https://karaoke-b21f4.web.app",
+#     "http://karaoke-b21f4.web.app"
+# ]
+
+CORS_ALLOW_ALL_ORIGINS = True
 
 ROOT_URLCONF = 'lyricsfromsong.urls'
 
